@@ -1,0 +1,32 @@
+
+<section class="tabla" id="tabla">
+    <div class="heading">
+        <h1>Tabla de Datos</h1>
+    </div>
+<div class="container">
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Tema De Interes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let persona of personas; index as i">
+                <th scop="row">{{i + 1}}</th>
+                <td>{{persona.nombre}}</td>
+                <td>{{persona.apellido}}</td>
+                <td>{{persona.edad}}</td>
+                <td>{{persona.correo}}</td>
+                <td>{{persona.tema}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</section>
+
+   

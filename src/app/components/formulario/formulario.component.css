@@ -1,0 +1,44 @@
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact .row .imagen{
+    max-width: 650px;
+}
+
+@media (max-width:450px){
+    .contact .row .imagen{
+        max-width: 250px;
+        display: block;
+        margin: auto;
+    }
+  }
+
+.contact .row form{
+    flex:1 1 42rem;
+    padding: 2rem;
+    text-align: center;
+    background:#222;
+}
+
+.contact .row form h3{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    color: var(--green);
+}
+
+.contact .row form .box{
+    width:100%;
+    padding:1rem 1.2rem;
+    background: floralwhite;
+    color: #222;
+    font-size: 1.6rem;
+    text-transform: none;
+    margin: .7rem 0;
+}
+
+.contact .row form textarea{
+    height:15rem;
+    resize: none;
+}

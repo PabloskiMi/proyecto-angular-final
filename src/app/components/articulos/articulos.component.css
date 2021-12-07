@@ -1,0 +1,80 @@
+
+
+.blogs .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .blogs .box-container .box {
+    border-radius: 1rem;
+    background: #222;
+    overflow: hidden;
+  }
+  
+  .blogs .box-container .box:hover .image img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  
+  .blogs .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .blogs .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  .blogs .box-container .box .content {
+    padding: 2rem;
+  }
+  
+  .blogs .box-container .box .content .link {
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .blogs .box-container .box .content .link:hover {
+    color: var(--green)
+  }
+  
+  .blogs .box-container .box .content p {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #aaa;
+    line-height: 2;
+  }
+  
+  .blogs .box-container .box .content .icon {
+    padding-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .blogs .box-container .box .content .icon a {
+    font-size: 1.4rem;
+    color: #aaa;
+  }
+  
+  .blogs .box-container .box .content .icon a:hover {
+    color: var(--green)
+  }
+  
+  .blogs .box-container .box .content .icon a i {
+    padding-right: .5rem;
+    color: var(--green)
+  }

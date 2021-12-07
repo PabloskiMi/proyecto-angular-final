@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+
+:root{
+    --green:#27ae60;
+}
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .3s cubic-bezier(.38,1.15,.7,1.12);
+    font-weight: normal;
+    font-family: cursive;
+}
+
+*::selection{
+    background:var(--green);
+    color:#fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width:1.3rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:#3333;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--green);
+}
+
+section{
+    min-height: 100vh;
+    padding:0 7%;
+    padding-top: 10rem;
+}
+
+.btn{
+    display: inline-block;
+    border:.2rem solid var(--green);
+    font-size: 1.7rem;
+    color: var(--green);
+    background:rgba(0,255,0,.1);
+    margin-top: 1rem;
+    padding:.7rem 3rem;
+}
+
+.btn:hover{
+    background:var(--green);
+    color:#fff;
+    border-radius: 5rem;
+}
+
+.heading{
+    font-size: 3.5rem;
+    color:#666;
+    text-align: center;
+    text-transform: uppercase;
+    padding:1rem;
+}
